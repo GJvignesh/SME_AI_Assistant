@@ -1,0 +1,1 @@
+this is react ui for pharma client project meta data file

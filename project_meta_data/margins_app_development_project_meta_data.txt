@@ -1,0 +1,3 @@
+This project is handled by Jeeva.
+This application is used to calculate the day-to-day margins for trading.
+This have 4 pending user stories need to be developed and have 18 feature development Jira and 50 bug fixes
