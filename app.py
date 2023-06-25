@@ -10,6 +10,7 @@ from preprocessing_module import preprocessing
 from constants import project_list
 import utility_functions
 import LLM.model as model
+import LLM.model_test as poc_model
 
 # c1, c2 = st.columns([2, 2])
 # c2.title('Welcome to Virtual Subject Matter Expert App (POC)')
@@ -48,6 +49,6 @@ if st.button('Get Answer'):
             pp = preprocessing.Preprocess()
             processed_project_meta_data = pp.pre_preprocess_text(project_data)
             processed_project_meta_data_str = ''.join(processed_project_meta_data)
-            st.write(constants.base_prompt+processed_project_meta_data_str)
-            # model_answer = model.answer(constants.base_prompt+processed_project_meta_data_str, user_input)
-            # st.write(model_answer)
+            # st.write(constants.base_prompt+processed_project_meta_data_str)
+            model_answer = poc_model.answer(constants.base_prompt+processed_project_meta_data_str, user_input)
+            st.write(model_answer)
